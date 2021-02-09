@@ -1,0 +1,126 @@
+/** CSS STYLE **/
+:root {
+
+  --white: #fff;
+  --whity: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --main-dark: #42413c;
+  --dark: #2a2626;
+  --dark-translucent: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+
+}
+
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: 'Neucha';
+  src: url('../assets/fonts/Neucha-Regular.ttf');
+  }
+
+@font-face {
+  font-weight: 400; /* Соответствует значению normal */
+  font-family: 'OpenSans';
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-weight: 700; /* Соответствует значению normal */
+  font-family: 'OpenSans';
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: var(--dark);
+}
+
+h1, h2, h3 {
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
+section {
+  position: relative;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+section::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+
+  background-image: url(../assets/images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 10%;
+
+  content: '';
+}
+
+.section-content {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.main-image {
+  position: absolute;
+  height: 525px;
+  top: 55px;
+  right: -270px;
+}
+
+.section-text {
+  margin-top: 165px;
+
+  column-count: 2;
+  column-gap: 30px;
+}
+
+
+/* Utility classes */
+
+.text-main {
+  color: var(--main);
+}
+
+.break {
+  break-inside: avoid;
+}
+
+.btn {
+  padding: 12px 24px;
+}
+
+.btn-main {
+  position: relative;
+  top: 40px;
+  left: 570px;
+
+  color: var(--white);
+  background: var(--main);
+  font-weight: bold;
+}
+
