@@ -1,6 +1,5 @@
 /** CSS STYLE **/
 :root {
-
   --white: #fff;
   --whity: #d7ccc0;
   --light: #f5f4f0;
@@ -10,25 +9,24 @@
   --dark-translucent: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
-
 }
 
 @font-face {
   font-weight: 400; /* Соответствует значению normal */
-  font-family: 'Neucha';
-  src: url('../assets/fonts/Neucha-Regular.ttf');
-  }
+  font-family: "Neucha";
+  src: url("../assets/fonts/Neucha-Regular.ttf");
+}
 
 @font-face {
   font-weight: 400; /* Соответствует значению normal */
-  font-family: 'OpenSans';
-  src: url('../assets/fonts/OpenSans-Regular.ttf');
+  font-family: "OpenSans";
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
   font-weight: 700; /* Соответствует значению normal */
-  font-family: 'OpenSans';
-  src: url('../assets/fonts/OpenSans-Bold.ttf');
+  font-family: "OpenSans";
+  src: url("../assets/fonts/OpenSans-Bold.ttf");
 }
 
 * {
@@ -42,7 +40,10 @@
   color: var(--dark);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
+  font-family: "Neucha";
   line-height: 1.2em;
 }
 
@@ -64,7 +65,7 @@ section {
   padding: 100px;
 }
 
-section::before {
+section.background::before {
   display: block;
   position: absolute;
   width: 100%;
@@ -77,7 +78,7 @@ section::before {
   background-size: cover;
   opacity: 10%;
 
-  content: '';
+  content: "";
 }
 
 .section-content {
@@ -99,11 +100,27 @@ section::before {
   column-gap: 30px;
 }
 
+.video {
+  margin-top: 30px;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
 
 /* Utility classes */
+.vilet {
+  padding-bottom: 0px;
+}
+
+.color-dark {
+  background-color: var(--main-dark);
+}
 
 .text-main {
   color: var(--main);
+}
+
+.text-center {
+  text-align: center;
 }
 
 .break {
@@ -123,4 +140,3 @@ section::before {
   background: var(--main);
   font-weight: bold;
 }
-
