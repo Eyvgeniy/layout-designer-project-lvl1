@@ -59,10 +59,15 @@ h3 {
   font-size: 34px;
 }
 
+h4 {
+  font-size: 14px;
+}
+
 section {
   position: relative;
   margin: 0 auto;
   padding: 100px;
+  overflow: hidden;
 }
 
 section.background::before {
@@ -94,33 +99,121 @@ section.background::before {
 }
 
 .section-text {
-  margin-top: 165px;
-
   column-count: 2;
   column-gap: 30px;
 }
 
 .video {
   margin-top: 30px;
+  z-index: 33000;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
+/* SECTION IKEA EFFECT */
+
+.title-content {
+  margin: 100px 0 20px;
+  padding: 5px 10px;
+}
+
+.description h4 {
+  color: var(--dark-translucent);
+  font-family: "Neucha";
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.description h3 {
+  margin-top: 30px;
+
+  font-weight: 400;
+}
+
+/* SECTION Premature-optimization */
+
+section#premature-optimization {
+  background-color: var(--brown);
+}
+
+section#premature-optimization .section-content .description > * {
+  color: var(--white);
+}
+
+.right-100 {
+  right: 100px;
+}
+
+/* Flex */
+.display-flex {
+  margin: -10px -15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  width: 350px;
+  padding: 24px;
+  margin: 10px 15px;
+  background-color: var(--white);
+}
+
+.flex-container:first-child {
+  padding: 0;
+  background-color: var(--main-dark);
+}
+
+.flex-container:first-child h2 {
+  font-size: 52px;
+}
+
+.flex-container h3 {
+  margin-top: 40px;
+  color: var(--main);
+}
+
+.flex-container p {
+  margin-top: 16px;
+}
+
 /* Utility classes */
-.vilet {
+.overlay {
+  margin-bottom: -100px;
   padding-bottom: 0px;
+  z-index: 3000;
 }
 
 .color-dark {
   background-color: var(--main-dark);
 }
 
+.color-white {
+  background-color: var(--white);
+}
+
+.color-brown {
+  background-color: var(--brown);
+}
+
 .text-main {
   color: var(--main);
 }
 
+.text-white {
+  color: var(--white);
+}
+
+.text-brown {
+  color: var(--brown);
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
 }
 
 .break {
@@ -139,4 +232,43 @@ section.background::before {
   color: var(--white);
   background: var(--main);
   font-weight: bold;
+}
+
+.btn-main:hover {
+  background-color: #ea7600;
+}
+
+.pt-100 {
+  padding-top: 100px;
+}
+
+.mt-150 {
+  padding-top: 150px;
+}
+
+.ml-45 {
+  margin-left: 45px;
+}
+
+.card:hover {
+  background-color: var(--main);
+}
+
+.card:hover h2,
+.card:hover h3,
+.card:hover p {
+  color: var(--white);
+}
+
+img {
+  vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+}
+
+.w-578 {
+  width: 578px;
+}
+
+a {
+  text-decoration: none;
 }
