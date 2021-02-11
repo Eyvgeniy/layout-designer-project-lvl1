@@ -93,7 +93,7 @@ header::before {
   background-image: url(../assets/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 10%;
+  opacity: 6%;
 
   content: "";
 }
