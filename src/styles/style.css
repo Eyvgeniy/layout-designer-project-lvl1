@@ -152,6 +152,10 @@ section#premature-optimization .section-content .description > * {
   display: flex;
 }
 
+section#distortion-of-novelty {
+  height: 960px;
+}
+
 /* FOOTER */
 
 footer {
