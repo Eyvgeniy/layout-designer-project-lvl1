@@ -30,20 +30,19 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 
-  font-family: "OpenSans", sans-serif;
   font-size: 16px;
+  font-family: "OpenSans", sans-serif;
   line-height: 1.6em;
-  color: var(--dark);
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Neucha";
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
 }
 
@@ -65,18 +64,21 @@ h4 {
 
 section {
   position: relative;
+
   margin: 0 auto;
   padding: 100px;
   overflow: hidden;
 }
 
 section.background::before {
-  display: block;
   position: absolute;
-  width: 100%;
-  height: 100%;
   top: 0;
   right: 0;
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
 
   background-image: url(../assets/images/background.png);
   background-repeat: no-repeat;
@@ -93,9 +95,10 @@ section.background::before {
 
 .main-image {
   position: absolute;
-  height: 525px;
   top: 55px;
   right: -270px;
+
+  height: 525px;
 }
 
 .section-text {
@@ -104,8 +107,9 @@ section.background::before {
 }
 
 .video {
-  margin-top: 30px;
   z-index: 33000;
+
+  margin-top: 30px;
 
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
@@ -118,10 +122,9 @@ section.background::before {
 }
 
 .description h4 {
-  color: var(--dark-translucent);
-  font-family: "Neucha";
   font-weight: 400;
   font-size: 24px;
+  font-family: Neucha, sans-serif;
 }
 
 .description h3 {
@@ -144,23 +147,94 @@ section#premature-optimization .section-content .description > * {
   right: 100px;
 }
 
+.title-flex {
+  display: flex;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 100px;
+}
+
+label {
+  display: block;
+  margin-bottom: 9px;
+
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+input {
+  width: 423px;
+  height: 50px;
+
+  margin-right: -5px;
+  padding: 15px;
+  border-radius: 0;
+}
+
+.agreement {
+  font-size: 12px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-send {
+  width: 70px;
+  height: 50px;
+
+  background-color: var(--main);
+}
+
+.input-block {
+  position: relative;
+
+  display: flex;
+}
+
+.btn-send::before {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+
+  display: block;
+
+  content: url("../assets/images/send.svg");
+}
+
+.contacts {
+  margin-top: 60px;
+
+  font-size: 14px;
+  text-align: center;
+}
+
 /* Flex */
 .display-flex {
-  margin: -10px -15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  margin: -10px -15px;
 }
 
 .flex-container {
   width: 350px;
-  padding: 24px;
+
   margin: 10px 15px;
+  padding: 24px;
+
   background-color: var(--white);
 }
 
 .flex-container:first-child {
   padding: 0;
+
   background-color: var(--main-dark);
 }
 
@@ -170,6 +244,7 @@ section#premature-optimization .section-content .description > * {
 
 .flex-container h3 {
   margin-top: 40px;
+
   color: var(--main);
 }
 
@@ -179,9 +254,18 @@ section#premature-optimization .section-content .description > * {
 
 /* Utility classes */
 .overlay {
-  margin-bottom: -100px;
-  padding-bottom: 0px;
   z-index: 3000;
+
+  margin-bottom: -100px;
+  padding-bottom: 0;
+}
+
+.d-block {
+  display: block;
+}
+
+.font-12 {
+  font-size: 12px;
 }
 
 .color-dark {
@@ -208,6 +292,10 @@ section#premature-optimization .section-content .description > * {
   color: var(--brown);
 }
 
+.text-translucent {
+  color: var(--dark-translucent);
+}
+
 .text-center {
   text-align: center;
 }
@@ -230,8 +318,9 @@ section#premature-optimization .section-content .description > * {
   left: 570px;
 
   color: var(--white);
-  background: var(--main);
   font-weight: bold;
+
+  background: var(--main);
 }
 
 .btn-main:hover {
@@ -242,12 +331,32 @@ section#premature-optimization .section-content .description > * {
   padding-top: 100px;
 }
 
+.my-55 {
+  margin: 55px;
+}
+
 .mt-150 {
   padding-top: 150px;
 }
 
+.mt-76 {
+  margin-top: 76px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
 .ml-45 {
   margin-left: 45px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.mr-55 {
+  margin-right: 55px;
 }
 
 .card:hover {
@@ -262,6 +371,7 @@ section#premature-optimization .section-content .description > * {
 
 img {
   vertical-align: middle;
+
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
@@ -269,6 +379,7 @@ img {
   width: 578px;
 }
 
-a {
+.nolink {
+  color: var(--main-dark);
   text-decoration: none;
 }
