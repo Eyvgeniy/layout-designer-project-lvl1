@@ -74,7 +74,7 @@ section {
 }
 
 header {
-  height: 946px;
+  height: 914px;
   margin: 0 auto;
   padding: 100px;
   overflow: hidden;
@@ -402,8 +402,12 @@ br {
   margin-right: 55px;
 }
 
-.card:hover {
+.card {
   background-color: var(--light);
+}
+
+.card:hover {
+  background-color: var(--main);
 }
 
 .card:hover h2,
