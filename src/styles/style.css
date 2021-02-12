@@ -288,7 +288,7 @@ input {
 
 br {
   display: block;
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 .overlay {
@@ -323,7 +323,7 @@ br {
 }
 
 .text-dark {
-  color: var(--dark-translucent);
+  color: var(--dark);
 }
 
 .text-dark-bootstrap {
