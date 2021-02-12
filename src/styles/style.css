@@ -108,6 +108,7 @@ section.background::before {
   width: 100%;
   height: 100%;
 
+  background-color: var(--whity);
   background-image: url(../assets/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -117,13 +118,15 @@ section.background::before {
 }
 
 .section-content {
+  position: relative;
+
   width: 1110px;
   margin: 0 auto;
 }
 
 .main-image {
   position: absolute;
-  top: 55px;
+  top: -53px;
   right: -270px;
 
   height: 525px;
@@ -177,10 +180,6 @@ section#premature-optimization .section-content .description > * {
 
 .title-flex {
   display: flex;
-}
-
-section#distortion-of-novelty {
-  height: 960px;
 }
 
 /* FOOTER */
@@ -285,6 +284,11 @@ input {
 }
 
 /* Utility classes */
+br {
+  display: block;
+  margin-top: 16px;
+}
+
 .overlay {
   z-index: 3000;
 
@@ -346,7 +350,7 @@ input {
 
 .btn-main {
   position: relative;
-  top: 40px;
+  top: 36px;
   left: 570px;
 
   color: var(--white);
@@ -367,8 +371,8 @@ input {
   margin: 55px;
 }
 
-.mt-150 {
-  padding-top: 150px;
+.mt-194 {
+  margin-top: 194px;
 }
 
 .mt-76 {
