@@ -67,6 +67,11 @@ h4 {
   line-height: 1.2;
 }
 
+h1.text-dark {
+  position: relative;
+  z-index: 200;
+}
+
 section {
   position: relative;
 
