@@ -74,8 +74,7 @@ section {
 }
 
 header {
-  position: relative;
-
+  height: 946px;
   margin: 0 auto;
   padding: 100px;
   overflow: hidden;
@@ -94,7 +93,7 @@ header::before {
   background-image: url(../assets/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 6%;
+  opacity: 10%;
 
   content: "";
 }
@@ -246,6 +245,7 @@ input {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: center;
 
   margin: -10px -15px;
 }
@@ -276,10 +276,14 @@ input {
 }
 
 .flex-container p {
-  margin-top: 16px;
+  margin-top: 12px;
 }
 
 /* Utility classes */
+.lh-1-1 {
+  line-height: 1.1;
+}
+
 br {
   display: block;
   margin-top: 16px;
@@ -351,11 +355,14 @@ br {
 .btn-main {
   position: relative;
   top: 36px;
-  left: 570px;
+  left: 566px;
+
+  display: block;
 
   color: var(--white);
   font-weight: bold;
 
+  border: none;
   background: var(--main);
 }
 
@@ -372,7 +379,7 @@ br {
 }
 
 .mt-194 {
-  margin-top: 194px;
+  margin-top: 190px;
 }
 
 .mt-76 {
