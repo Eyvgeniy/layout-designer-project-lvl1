@@ -24,7 +24,7 @@
 }
 
 @font-face {
-  font-weight: 700; /* Соответствует значению normal */
+  font-weight: 700; /* Соответствует значению bold */
   font-family: "OpenSans";
   src: url("../assets/fonts/OpenSans-Bold.ttf");
 }
@@ -43,6 +43,7 @@ h1,
 h2,
 h3 {
   font-family: Neucha, sans-serif;
+  font-style: normal;
   line-height: 1.2em;
 }
 
@@ -89,7 +90,7 @@ header::before {
   width: 100%;
   height: 100%;
 
-  background-color: var(--whity);
+  background-color: var(--light);
   background-image: url(../assets/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,7 +109,7 @@ section.background::before {
   width: 100%;
   height: 100%;
 
-  background-color: var(--whity);
+  background-color: var(--light);
   background-image: url(../assets/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
