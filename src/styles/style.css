@@ -138,6 +138,8 @@ section.background::before {
   right: -270px;
 
   height: 525px;
+
+  z-index: 100;
 }
 
 .section-text {
