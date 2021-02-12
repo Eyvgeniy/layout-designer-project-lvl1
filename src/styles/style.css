@@ -286,11 +286,6 @@ input {
   line-height: 1.1;
 }
 
-br {
-  display: block;
-  margin-top: 18px;
-}
-
 .overlay {
   z-index: 3000;
 
