@@ -95,7 +95,7 @@ header::before {
   background-image: url(../assets/images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 10%;
+  opacity: 0.06%;
 
   content: "";
 }
@@ -288,7 +288,7 @@ input {
 
 br {
   display: block;
-  margin-top: 12px;
+  margin-top: 14px;
 }
 
 .overlay {
@@ -364,8 +364,8 @@ br {
 
 .btn-main {
   position: relative;
-  top: 36px;
-  left: 566px;
+  top: 39px;
+  left: 570px;
 
   display: block;
 
@@ -389,7 +389,7 @@ br {
 }
 
 .mt-194 {
-  margin-top: 204px;
+  margin-top: 200px;
 }
 
 .mt-76 {
