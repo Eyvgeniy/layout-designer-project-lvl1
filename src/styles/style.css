@@ -76,6 +76,8 @@ section {
 }
 
 header {
+  position: relative;
+
   height: 914px;
   margin: 0 auto;
   padding: 100px;
