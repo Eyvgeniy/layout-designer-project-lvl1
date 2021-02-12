@@ -45,6 +45,7 @@ h3 {
   font-family: Neucha, sans-serif;
   font-style: normal;
   line-height: 1.2em;
+  letter-spacing: 0em;
 }
 
 h1 {
@@ -397,7 +398,7 @@ br {
 }
 
 .card:hover {
-  background-color: var(--main);
+  background-color: var(--light);
 }
 
 .card:hover h2,
