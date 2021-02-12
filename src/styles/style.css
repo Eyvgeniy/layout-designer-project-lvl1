@@ -7,6 +7,8 @@
   --main-dark: #42413c;
   --dark: #2a2626;
   --dark-translucent: #908d8b;
+  --dark-bootstrap: #212529;
+
   --brown: #b09a81;
   --blue: #1085c5;
 }
@@ -318,6 +320,14 @@ br {
 
 .color-brown {
   background-color: var(--brown);
+}
+
+.text-dark {
+  color: var(--dark-translucent);
+}
+
+.text-dark-bootstrap {
+  color: var(--dark-bootstrap);
 }
 
 .text-main {
