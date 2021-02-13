@@ -8,7 +8,6 @@
   --dark: #2a2626;
   --dark-translucent: #908d8b;
   --dark-bootstrap: #212529;
-
   --brown: #b09a81;
   --blue: #1085c5;
 }
@@ -44,8 +43,8 @@
 h1,
 h2,
 h3 {
-  font-family: Neucha, sans-serif;
   font-weight: 400;
+  font-family: Neucha, sans-serif;
   font-style: normal;
   line-height: 1.2em;
 }
@@ -372,11 +371,11 @@ input {
   left: 570px;
 
   display: block;
+  border: none;
 
   color: var(--white);
   font-weight: bold;
 
-  border: none;
   background: var(--main);
 }
 
