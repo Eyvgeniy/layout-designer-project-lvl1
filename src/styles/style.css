@@ -88,7 +88,6 @@ header::before {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: -200;
 
   display: block;
 
@@ -139,6 +138,8 @@ section.background::before {
   right: -270px;
 
   height: 525px;
+
+  filter: none;
 }
 
 .section-text {
