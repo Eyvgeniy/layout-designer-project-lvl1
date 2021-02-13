@@ -6,4 +6,4 @@
 
 #### Использовано: OOCSS, Flex, Surge
 
-Ссылка на проект [polite-toy.surge.sh](polite-toy.surge.sh)
+Ссылка на проект [polite-toy.surge.sh](https://polite-toy.surge.sh)
