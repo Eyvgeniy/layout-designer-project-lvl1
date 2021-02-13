@@ -67,11 +67,6 @@ h4 {
   line-height: 1.2;
 }
 
-h1.text-dark {
-  position: relative;
-  z-index: 200;
-}
-
 section {
   position: relative;
 
@@ -107,6 +102,11 @@ header::before {
   content: "";
 }
 
+.title {
+  position: relative;
+  z-index: 1000;
+}
+
 section.background::before {
   position: absolute;
   top: 0;
@@ -138,8 +138,6 @@ section.background::before {
   right: -270px;
 
   height: 525px;
-
-  z-index: 100;
 }
 
 .section-text {
