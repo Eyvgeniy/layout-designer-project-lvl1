@@ -428,7 +428,7 @@ input {
   color: var(--white);
 }
 
-img {
+.card-image {
   vertical-align: middle;
 }
 
